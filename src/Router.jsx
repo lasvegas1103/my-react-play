@@ -7,7 +7,6 @@ const Router = () => {
         <Switch>
             <Route expact path="/recognition" component={SpeechRecognition} />
             <Route expact path="/" component={Home} />
-            
         </Switch>
     )
 };
