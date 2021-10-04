@@ -64,21 +64,11 @@ const SpeechRecognition = () => {
   };
 
   return (
-    // <div>
-    // <p>Microphone: {listening ? 'on' : 'off'}</p>
-    // <button onClick={handleStartListening}>Start</button>
-    // <p>{ isAlertFlg ? 'マイクのアクセスを許可してください' : ''}</p>
-    // <button onClick={handleStopListening}>Stop</button>
-    // <button onClick={resetTranscript}>Reset</button>
-    // <button onClick={handleDownLoad}>output</button>
-    // <p>{finalTranscript}</p>
-    // <p>{message}</p>
-    // </div>
-
     <div className="container mx-auto px-8">
       <h1 className="text-4xl font-bold text-center">文字起こし</h1>
       <div className="text-center px-4 py-2 m-2">
         <p>文字起こし: {listening ? "開始" : "終了"}</p>
+        <p>{isAlertFlg ? "マイクのアクセスを許可してください" : ""}</p>
       </div>
       <div class="grid grid-cols-4 gap-2">
         <div class="bg-blue-400 text-center text-white p-2 rounded">
